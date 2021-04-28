@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+      <title>ShortURL</title>
+  </head>
+
+<body style="font-size:20px; padding:50px;">
+  <div style='display: flex; flex-direction: column;'>
+    <h1 style='margin: 0px auto 10px;'> Lighthouse URL Shortener </h1>
+    <div style='margin: auto;'>
+      <a style='font-size: 15px;' href='http://localhost:<%= process.env.PORT || 3000  %>/'>Create ShortURL | </a>
+      <a style='font-size: 15px;' href='http://localhost:<%= process.env.PORT || 3000  %>/all'>View All | </a>
+      <a style='font-size: 15px;' href='http://localhost:<%= process.env.PORT || 3000  %>/redirect'>Redirect via ShortURL</a>
+    </div>
+  </div>
+  <br>

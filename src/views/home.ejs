@@ -1,0 +1,11 @@
+<%- include('./partials/header') %>
+    <h3>Create ShortURL</h3>
+    <form class="form-inline" action="/urls" method="POST">
+        <div class="form-group mb-2">
+            <label for="long_url">Enter a URL:</label>
+            <input class="form-control" type="text" name="long_url" placeholder="http://" style="width: 300px; margin: 1em">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+<%- include('./partials/footer') %>
+

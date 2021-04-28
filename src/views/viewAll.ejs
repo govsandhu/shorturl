@@ -1,0 +1,10 @@
+<%- include('./partials/header') %>
+    <div style="display: flex; flex-direction: column;">
+        <% for (const url of urls) { %>
+            <div style="margin: auto;">
+                <a href=<%= url.long_url %>><%= url.short_url %></a>
+                <span>| <%= url.long_url %></span>
+            </div>
+        <% } %>
+    </div>
+<%- include('./partials/footer') %>
